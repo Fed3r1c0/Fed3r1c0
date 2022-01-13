@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+        <title>Table/js</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="icon" type="image/x-icon" href="logo-ilmeteo-301.jpg">
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        
+        <style>
+            table, td, th {  
+                border: 1px solid black ;
+                text-align: center;
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            th, td {
+            padding: 20px;
+            }
+		</style>
+		
+	</head>
+	<body style="background-color:lightblue">
+
+<br>
+<br>
+<br>
+		<table style="background-color:lightgreen" id="myTable" height="100px">
+			
+                <tr>
+					<td>
+						<img src="https://www.ilmeteo.it/portale/italy1.jpg" alt="Meteo domani">
+					</td>
+                    <td>
+					<b>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam,Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					</b>
+					</td>
+                </tr>
+                <tr> 
+                    <td><b>Foto Cartina Italia<b></td>
+                    <td><b>Cella 3<b></td>
+                </tr>
+                <tr>
+                    <td><b>Cella 4<b></td>
+                    <td><b>Cella 5<b></td>
+                </tr>
+		</table>
+		
+	<p><i><b>Click the button to remove the first row in the table.</b></i></p>
+
+	<button onclick="AddMultiple()">ADD</button>
+
+	
+	<button onclick="deleteRow()">Annulla</button>
+	
+	<script type="text/javascript">
+	
+	
+	function AddMultiple() {	
+		for(var i =0; i < 5; i++) {
+			addRow(i, "Prova", i);
+		}
+	}
+	
+	
+	
+	function addRow(txtC1, txtC2, idx) {
+	  var table = document.getElementById("myTable");
+	  var row = table.insertRow(idx);
+	  var cell1 = row.insertCell(0);
+	  var cell2 = row.insertCell(1);
+	  cell1.innerHTML = txtC1;
+	  cell2.innerHTML = txtC2;
+	  /*
+	  var inp = document.createElement("input");
+	  inp.type="text";
+	  cell1.appendChild(inp);
+	  */
+	}
+	
+	function deleteRow() {
+	  var x = document.getElementById("myTable");
+	  x.deleteRow(0);
+	}
+	</script>
+	</body>
+</html>

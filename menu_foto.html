@@ -1,0 +1,29 @@
+<div class="home-map-big">
+        <div id="tab-menu-map">
+            <a id="bigmap-part-0" class="tab" href="javascript:;" onclick="return setbigmap_part(0)">Giornata</a>
+            <a id="bigmap-part-1" class="tab tab-on" href="javascript:;" onclick="return setbigmap_part(1)"><span>Mattina</span></a>
+            <a id="bigmap-part-2" class="tab" href="javascript:;" onclick="return setbigmap_part(2)"><span>Pomeriggio</span></a>
+            <a id="bigmap-part-3" class="tab" href="javascript:;" onclick="return setbigmap_part(3)"><span>Sera</span></a>
+            <a id="bigmap-part-4" class="tab" href="javascript:;" onclick="return setbigmap_part(4)"><span>Notte</span></a>
+        </div>
+        <div id="bigmap-container" style="position:relative; border-top:1px solid #d1d1d1">
+            <div id="bigmap-div0" style="position: absolute; z-index: 9; height: 460px; width: 425px; padding: 0px;">
+                <img src="/portale/italybig_m.jpg" id="bigmap_image" style="position: absolute; height: 460px; width: 425px; left: 0px; top: 0px;"><canvas id="bigmap_canvas" height="460" width="425" style="height: 460px; width: 425px; position: absolute; left: 0px; top: 0px; opacity: 1;"></canvas><div id="mappa-italia-big_blind" class="blind_area" style="position: absolute; height: 460px; width: 425px; left: 0px; top: 0px;"> </div><img id="bigmap" src="/portale/italybig_m.jpg" class="" usemap="#mappa-italia-big" alt="" width="425" height="460" onclick="location='/portale/meteo-oggi'" style="position: absolute; height: 460px; width: 425px; left: 0px; top: 0px; opacity: 0;">
+            </div>
+            <div id="bigmap-div1" style="position: absolute; z-index: 8; display: none; height: 460px; width: 425px; padding: 0px;" class="">
+                <img src="/portale/italybig_m.jpg" id="bigmap1_image" style="position: absolute; height: 460px; width: 425px; left: 0px; top: 0px;"><canvas id="bigmap1_canvas" height="460" width="425" style="height: 460px; width: 425px; position: absolute; left: 0px; top: 0px;"></canvas><div id="mappa-italiaprec-big_blind" class="blind_area" style="position: absolute; height: 460px; width: 425px; left: 0px; top: 0px;"> </div><img id="bigmap1" src="/portale/italybig_m.jpg" class="" usemap="#mappa-italiaprec-big" alt="" width="425" height="460" onclick="location='/portale/meteo-oggi'" style="position: absolute; height: 460px; width: 425px; left: 0px; top: 0px; opacity: 0;">
+            </div>
+            <div id="bigmap-div3" style="position: absolute; z-index: 6; display: none; height: 460px; width: 425px; padding: 0px;">
+                <img src="/portale/italybig_m.jpg" id="bigmap3_image" style="position: absolute; height: 460px; width: 425px; left: 0px; top: 0px;"><canvas id="bigmap3_canvas" height="460" width="425" style="height: 460px; width: 425px; position: absolute; left: 0px; top: 0px;"></canvas><div id="mappa-italiamari-big_blind" class="blind_area" style="position: absolute; height: 460px; width: 425px; left: 0px; top: 0px;"> </div><img id="bigmap3" src="/portale/italybig_m.jpg" class="" usemap="#mappa-italiamari-big" alt="" width="425" height="460" style="position: absolute; height: 460px; width: 425px; left: 0px; top: 0px; opacity: 0;">
+            </div>
+            <div id="bigmap-div9" style="position:absolute; z-index:4">
+                <a href="https://www.ilmeteo.it/portale/meteo-oggi" title="Radar"><img id="bigmap9" src="/portale/italybig_m.jpg" alt="" width="425" height="460"></a>
+            </div>
+            <div id="bigmap-div10" style="position:absolute; z-index:4">
+                <iframe src="" title="Radar Italia" style="width:425px;height:460px;border:0px"></iframe>
+            </div>
+        </div>
+        <div id="left-menu-map">
+            <a id="bigmap-type-0" class="tab tab-on" href="javascript:;" onclick="return setbigmap_type(0)">Tempo</a><a id="bigmap-type-1" class="tab" href="javascript:;" onclick="return setbigmap_type(1)">Precipitazioni</a><a id="bigmap-type-4" class="tab" href="javascript:;" onclick="return setbigmap_type(4)">Neve</a><a id="bigmap-type-2" class="tab" href="javascript:;" onclick="return setbigmap_type(2)">Temperature</a><a id="bigmap-type-3" class="tab" href="javascript:;" onclick="return setbigmap_type(3)">Venti-Mari</a>
+        </div>
+    </div>
